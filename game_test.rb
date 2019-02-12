@@ -33,4 +33,19 @@ class GameTest < MiniTest::Test
       rubies.any? { |num| num > -1 && num <= rubies_count }
     end
   end
+  
+  def test_move_town
+    game = Game.new
+    rubies_count = 2
+    town = game.populate_world
+    prng = Random.new(seed * prospect_num)
+    next_town = game.move_town(town, prng)
+
+    assert_block do
+      town.adjacent_towns.any? { |town| town == next_town }
+    end
+    assert next_town.rubies >= 0
+    assert next_town.fake_rubies >= 0
+    assert next_town.adjacent_towns.count > 0
+  end
 end
