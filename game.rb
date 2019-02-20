@@ -59,7 +59,6 @@ class Game
 
     # Return found rubies in an array
     rubies = Array[rubies_found, fake_rubies_found]
-    print_rubies_found(rubies_found, fake_rubies_found, town)
     rubies
   end
 
@@ -127,29 +126,20 @@ class Game
 
   # Run the game
   def run(seed, prospects, turns)
-    # Beginning prospector number
-    prospect_num = 1
+    prospect_num = 1 # Beginning prospector number
     (0...prospects).each do
-      prng = Random.new(seed * prospect_num) # Create pseudo random num generator
-      turns_taken = 0
-      days_taken = 0
-      rubies_found = 0
-      fake_rubies_found = 0
-      # Get version of game and start town (Enumerable Canyon)
-      cur_town = populate_world
-
+      prng = Random.new(seed * prospect_num) # Create pseudo random number generator
+      turns_taken, days_taken, rubies_found, fake_rubies_found = 0, 0, 0, 0
+      cur_town = populate_world # Get version of game and start town (Enumerable Canyon)
       puts "Rubyist ##{prospect_num} starting in #{cur_town.name}."
 
       while turns_taken < turns
-        # Mine for rubies
-        rubies = prospect(cur_town, prng)
-        # Add found rubies to total
-        rubies_found += rubies[0]
+        rubies = prospect(cur_town, prng) # Mine for rubies
+        print_rubies_found(rubies[0], rubies[1], cur_town)
+        rubies_found += rubies[0] # Add found rubies to total
         fake_rubies_found += rubies[1]
 
-        # Check if found any rubies or if last turn
-        unless rubies[0] > 0 || rubies[1] > 0
-          # Move to next town
+        unless rubies[0] > 0 || rubies[1] > 0 # Check if found any rubies or if last turn
           next_town = move_town(cur_town, prng)
           turns_taken += 1
           puts "Heading from #{cur_town.name} to #{next_town.name}." unless turns_taken == turns
@@ -157,9 +147,7 @@ class Game
         end
         days_taken += 1
       end
-      # Print out prospecting totals
-      print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found)
-      # Move on to next prospector (resets game world)
+      print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found) # End print, move to next
       prospect_num += 1
     end
   end

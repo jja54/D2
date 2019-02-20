@@ -8,3 +8,4 @@ SimpleCov.start
 
 require_relative 'class_town_test'
 require_relative 'game_test'
+require_relative 'arg_check_test'
