@@ -49,8 +49,10 @@ class Game
 
   # Search for Rubies for 1 turn
   def prospect(town, prng)
+    raise 'Valid Pseudo-Random Number Generator must be passed in!' unless prng.is_a?(Random)
+
     # Existence of at least 1 of either type is implicit
-    rubies_possible = town.rubies
+    rubies_possible = town.rubies # Will throw NoMethodError if not Town
     fake_rubies_possible = town.fake_rubies
 
     # Mine for rubies
@@ -64,6 +66,8 @@ class Game
 
   # Print daily rubies found
   def print_rubies_found(rubies_found, fake_rubies_found, town)
+    raise 'Ruby and/or Fake Ruby counts can not be < 0!' if rubies_found < 0 || fake_rubies_found < 0
+
     name = town.name
     if rubies_found.zero? && fake_rubies_found.zero?
       puts "\tFound no rubies or fake rubies in #{name}."
@@ -86,7 +90,9 @@ class Game
   # Move to the next town
   def move_town(town, prng)
     # Pick the next town pseudo-randomly
-    towns_possible = town.adjacent_towns.size
+    raise 'Valid Pseudo-Random Number Generator must be passed in!' unless prng.is_a?(Random)
+
+    towns_possible = town.adjacent_towns.size # Will throw NoMethodError if not Town
     next_town_num = prng.rand(towns_possible)
 
     # Return the next town
@@ -96,6 +102,8 @@ class Game
 
   # Print end-journey results
   def print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found)
+    raise 'Ruby and/or Fake Ruby counts can not be < 0!' if rubies_found < 0 || fake_rubies_found < 0
+
     if days_taken == 1
       puts "After 1 day, Rubyist #{prospect_num} found:"
     else
@@ -117,7 +125,7 @@ class Game
     case rubies_found
     when 0
       puts 'Going home empty-handed.'
-    when 1...9
+    when 1...10
       puts 'Going home sad.'
     else
       puts 'Going home victorious!'
@@ -129,7 +137,10 @@ class Game
     prospect_num = 1 # Beginning prospector number
     (0...prospects).each do
       prng = Random.new(seed * prospect_num) # Create pseudo random number generator
-      turns_taken, days_taken, rubies_found, fake_rubies_found = 0, 0, 0, 0
+      turns_taken = 0
+      days_taken = 0
+      rubies_found = 0
+      fake_rubies_found = 0
       cur_town = populate_world # Get version of game and start town (Enumerable Canyon)
       puts "Rubyist ##{prospect_num} starting in #{cur_town.name}."
 

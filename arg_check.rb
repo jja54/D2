@@ -16,7 +16,7 @@ def check_args(args)
   prospects = args[1].to_i
   turns = args[2].to_i
 
-  # If num of prospectors !>0=, inform the user and exit
+  # If num of prospectors !>= 0, inform the user and exit
   unless prospects >= 0
     puts error_msg
     error = true

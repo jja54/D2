@@ -16,6 +16,14 @@ class TownTest < Minitest::Test
     assert town.is_a?(Town)
   end
 
+  # A town created with no parameters should hold the correct defaults
+  def test_town_defaults
+    town = Town.new
+    assert_equal 'DEFAULT_NAME', town.name
+    assert_equal 0, town.rubies
+    assert_equal 0, town.fake_rubies
+  end
+
   # A newly created Town object should not return a nil reference
   def test_town_new_not_nil
     town = Town.new

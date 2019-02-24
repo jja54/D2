@@ -9,6 +9,12 @@ require_relative 'arg_check'
 # This is a MiniTest test file. It will test the Game class in ruby_rush.rb
 class ArgCheckTest < MiniTest::Test
   # UNIT TESTS FOR METHOD check_args(args)
+  # Equivalence classes:
+  # args.count != 3 -> output error, exit(1)
+  # args[1] (prospectors) = -INFINITY..-1 -> output error, exit(1)
+  # args[2] (turns) = -INFINITY..-1 -> output error, exit(1)
+  # args.count = 3, args are valid -> return false (no error in args)
+
   def setup
     error_msg = "Usage:\nruby gold_rush.rb *seed* *num_prospectors* *num_turns*\n*seed* should be an integer\n*num_prospectors* should be a non-negative integer\n*num_turns* should be a non-negative integer\n"
     error_msg
@@ -33,6 +39,14 @@ class ArgCheckTest < MiniTest::Test
     args = [0, 1, -20]
     error_msg = setup
 	assert_output(error_msg) { check_args(args) }
+  end
+
+  # If non-integer args are passed, arg_check will convert them to integers
+  # and will return false (no error in args)
+  # EDGE CASE
+  def test_non_int_args
+    args = ['seed', 'prospectors', 'turns']
+    refute check_args(args)
   end
 
   # If all arguements are valid, check_args returns false (no error)

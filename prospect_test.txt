@@ -1,9 +1,0 @@
-# Jack Anderson
-# jja54@pitt.edu
-# CS1632 - Software Quality Assurance, Spring 2019
-# Professor Bill Laboon
-
-# This is a MiniTest test file.  It will test the Town object in ruby_rush.rb
-
-require 'minitest/autorun'
-require_relative 'ruby_rush'
