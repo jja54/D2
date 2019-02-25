@@ -30,13 +30,22 @@ class TownTest < Minitest::Test
     refute_nil town
   end
 
-  # When initalizing the Town object, the passed in parameters
+  # When initializing the Town object, the passed in parameters
   # should be able to be accessed after at any time  
   def test_town_initialize_variables
     town = Town.new('Town Name', 5, 2)
     assert_equal 'Town Name', town.name
     assert_equal 5, town.rubies
     assert_equal 2, town.fake_rubies
+  end
+
+  # When initializing the Town object, the passed in rubies and
+  # fake_rubies even if non-integer objects will be converted to integers
+  # EDGE CASE
+  def test_town_initialize_non_ints
+    town = Town.new('Town Name', "rubies", nil)
+    assert town.rubies.is_a?(Integer)
+    assert town.fake_rubies.is_a?(Integer)
   end
 
   # UNIT TEST FOR METHOD add_edge(town)

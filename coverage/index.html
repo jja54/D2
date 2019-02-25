@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-24T18:43:58-05:00">2019-02-24T18:43:58-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-24T19:27:06-05:00">2019-02-24T19:27:06-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.37
+         2.39
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>6</b> files in total.
-    <b>366</b> relevant lines. 
-    <span class="green"><b>366</b> lines covered</span> and
+    <b>374</b> relevant lines. 
+    <span class="green"><b>374</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -57,17 +57,17 @@
         <td>15</td>
         <td>15</td>
         <td>0</td>
-        <td>3.1</td>
+        <td>3.8</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#7071331b36161a2ffc5c0cedf05e7109613fb267" class="src_link" title="arg_check_test.rb">arg_check_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>57</td>
-        <td>24</td>
-        <td>24</td>
+        <td>64</td>
+        <td>28</td>
+        <td>28</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
@@ -83,7 +83,7 @@
       <tr>
         <td class="strong"><a href="#6b61a77e1d0617027b9b6f8ee10d5dea5dee9168" class="src_link" title="game_test.rb">game_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>367</td>
+        <td>371</td>
         <td>197</td>
         <td>197</td>
         <td>0</td>
@@ -97,15 +97,15 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>16.7</td>
+        <td>17.1</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#24d63d61c9d2f951b7d5b93f88af87f00c80ad16" class="src_link" title="town_test.rb">town_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>52</td>
-        <td>24</td>
-        <td>24</td>
+        <td>61</td>
+        <td>28</td>
+        <td>28</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -188,32 +188,32 @@
           <code class="ruby">def check_args(args)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="9">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="9">
+          <span class="hits">6</span>
           
           <code class="ruby">  error_msg = &quot;Usage:\nruby gold_rush.rb *seed* *num_prospectors* *num_turns*\n*seed* should be an integer\n*num_prospectors* should be a non-negative integer\n*num_turns* should be a non-negative integer&quot;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="10">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
           
           <code class="ruby">  error = false</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="11">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="11">
+          <span class="hits">6</span>
           
           <code class="ruby">  unless args.count == 3</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
           <code class="ruby">    puts error_msg</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
           
           <code class="ruby">    error = true</code>
         </li>
@@ -230,14 +230,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="16">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="16">
+          <span class="hits">6</span>
           
           <code class="ruby">  prospects = args[1].to_i</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="17">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="17">
+          <span class="hits">6</span>
           
           <code class="ruby">  turns = args[2].to_i</code>
         </li>
@@ -254,8 +254,8 @@
           <code class="ruby">  # If num of prospectors !&gt;= 0, inform the user and exit</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="20">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="20">
+          <span class="hits">6</span>
           
           <code class="ruby">  unless prospects &gt;= 0</code>
         </li>
@@ -296,8 +296,8 @@
           <code class="ruby">  # inform the user and exit</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="27">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="27">
+          <span class="hits">6</span>
           
           <code class="ruby">  unless turns &gt;= 0</code>
         </li>
@@ -320,8 +320,8 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="31">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="31">
+          <span class="hits">6</span>
           
           <code class="ruby">  error</code>
         </li>
@@ -342,8 +342,8 @@
     <h3>arg_check_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>24</b> relevant lines. 
-      <span class="green"><b>24</b> lines covered</span> and
+      <b>28</b> relevant lines. 
+      <span class="green"><b>28</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -459,14 +459,14 @@
           <code class="ruby">  def setup</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="19">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="19">
+          <span class="hits">10</span>
           
           <code class="ruby">    error_msg = &quot;Usage:\nruby gold_rush.rb *seed* *num_prospectors* *num_turns*\n*seed* should be an integer\n*num_prospectors* should be a non-negative integer\n*num_turns* should be a non-negative integer\n&quot;</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="20">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="20">
+          <span class="hits">10</span>
           
           <code class="ruby">    error_msg</code>
         </li>
@@ -606,88 +606,130 @@
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">  # If non-integer args are passed, arg_check will convert them to integers</code>
+          <code class="ruby">  # If over 3 args are passed, the error message is displayed</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # and will return false (no error in args)</code>
+          <code class="ruby">  def test_too_many_args</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # EDGE CASE</code>
+          <code class="ruby">    args = [0, 4, 3, 12]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_non_int_args</code>
+          <code class="ruby">    error_msg = setup</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
           
-          <code class="ruby">    args = [&#39;seed&#39;, &#39;prospectors&#39;, &#39;turns&#39;]</code>
+          <code class="ruby">    assert_output(error_msg) { check_args(args) }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="49">
           
-          <code class="ruby">    refute check_args(args)</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # If non-integer args are passed, arg_check will convert them to integers</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">  # If all arguements are valid, check_args returns false (no error)</code>
+          <code class="ruby">  # and will return false (no error in args)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="53">
           
-          <code class="ruby">  def test_args_valid</code>
+          
+          <code class="ruby">  # EDGE CASE</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">    args = [0, 1, 1]</code>
+          <code class="ruby">  def test_non_int_args</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
+          <code class="ruby">    args = [&#39;seed&#39;, &#39;prospectors&#39;, &#39;turns&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
           <code class="ruby">    refute check_args(args)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="never" data-hits="" data-linenumber="57">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">  # If all arguements are valid, check_args returns false (no error)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_args_valid</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    args = [0, 1, 1]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    refute check_args(args)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">end</code>
@@ -3215,709 +3257,733 @@
           <code class="ruby">  # should raise a RuntimeError (caught) as ruby counts can not be negative</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="250">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="250">
           
-          <code class="ruby">  def test_print_negatives_exception</code>
+          
+          <code class="ruby">  # EDGE CASE</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="251">
           <span class="hits">1</span>
           
-          <code class="ruby">    game = Game.new</code>
+          <code class="ruby">  def test_print_negatives_exception</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="252">
           <span class="hits">1</span>
           
-          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
+          <code class="ruby">    game = Game.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="253">
           <span class="hits">1</span>
           
-          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
+          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="254">
           <span class="hits">1</span>
           
-          <code class="ruby">    rubies_found = -2</code>
+          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="255">
           <span class="hits">1</span>
           
-          <code class="ruby">    fake_rubies_found = -2</code>
+          <code class="ruby">    rubies_found = -2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="256">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_raises RuntimeError do</code>
+          <code class="ruby">    fake_rubies_found = -2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="257">
           <span class="hits">1</span>
           
-          <code class="ruby">      game.print_rubies_found(rubies_found, fake_rubies_found, town)</code>
+          <code class="ruby">    assert_raises RuntimeError do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="258">
+        <li class="covered" data-hits="1" data-linenumber="258">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      game.print_rubies_found(rubies_found, fake_rubies_found, town)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="259">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="260">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="261">
           
           
-          <code class="ruby">  # Passing in an invalid town parameter to the method</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="262">
           
           
-          <code class="ruby">  # should throw a &quot;NoMethodError&quot; as it will try to access</code>
+          <code class="ruby">  # Passing in an invalid town parameter to the method</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="263">
           
           
-          <code class="ruby">  # variables and methods that only exist for the Town class</code>
+          <code class="ruby">  # should throw a &quot;NoMethodError&quot; as it will try to access</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="264">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="264">
           
-          <code class="ruby">  def test_print_found_invalid_input</code>
+          
+          <code class="ruby">  # variables and methods that only exist for the Town class</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="265">
           <span class="hits">1</span>
           
-          <code class="ruby">    game = Game.new</code>
+          <code class="ruby">  def test_print_found_invalid_input</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="266">
           <span class="hits">1</span>
           
-          <code class="ruby">    town = &#39;This is not a town&#39;</code>
+          <code class="ruby">    game = Game.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="267">
           <span class="hits">1</span>
           
-          <code class="ruby">    rubies_found = 2</code>
+          <code class="ruby">    town = &#39;This is not a town&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="268">
           <span class="hits">1</span>
           
-          <code class="ruby">    fake_rubies_found = 2</code>
+          <code class="ruby">    rubies_found = 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="269">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_raises NoMethodError do</code>
+          <code class="ruby">    fake_rubies_found = 2</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="270">
           <span class="hits">1</span>
           
-          <code class="ruby">      game.print_rubies_found(rubies_found, fake_rubies_found, town)</code>
+          <code class="ruby">    assert_raises NoMethodError do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="271">
+        <li class="covered" data-hits="1" data-linenumber="271">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      game.print_rubies_found(rubies_found, fake_rubies_found, town)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="272">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="273">
           
           
-          <code class="ruby">  # ------------------------------------------</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="274">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # ------------------------------------------</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="275">
           
           
-          <code class="ruby">  # UNIT TESTS FOR METHOD print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="276">
           
           
-          <code class="ruby">  # Equivalence classes:</code>
+          <code class="ruby">  # UNIT TESTS FOR METHOD print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="277">
           
           
-          <code class="ruby">  # rubies_found=fake_rubies_found= 0 -&gt; prints none found, going home empty-handed</code>
+          <code class="ruby">  # Equivalence classes:</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="278">
           
           
-          <code class="ruby">  # rubies_found=fake_rubies_found= 1 -&gt; prints 1 ruby/1 fake ruby (singular), going home sad</code>
+          <code class="ruby">  # rubies_found=fake_rubies_found= 0 -&gt; prints none found, going home empty-handed</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="279">
           
           
-          <code class="ruby">  # rubies_found=fake_rubies_found= 2..INFINITY -&gt; prints x rubies/fake rubies (plural)</code>
+          <code class="ruby">  # rubies_found=fake_rubies_found= 1 -&gt; prints 1 ruby/1 fake ruby (singular), going home sad</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="280">
           
           
-          <code class="ruby">  # rubies_found= 2..9 -&gt; prints x rubies, going home sad</code>
+          <code class="ruby">  # rubies_found=fake_rubies_found= 2..INFINITY -&gt; prints x rubies/fake rubies (plural)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="281">
           
           
-          <code class="ruby">  # rubies_found= 10..INFINITY -&gt; prints x rubies, going home victorious</code>
+          <code class="ruby">  # rubies_found= 2..9 -&gt; prints x rubies, going home sad</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="282">
           
           
-          <code class="ruby">  # rubies_found=fake_rubies_found= -INFINITY..-1 -&gt; raises exception</code>
+          <code class="ruby">  # rubies_found= 10..INFINITY -&gt; prints x rubies, going home victorious</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="283">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # rubies_found=fake_rubies_found= -INFINITY..-1 -&gt; raises exception</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="284">
           
           
-          <code class="ruby">  # If the game ends after one day, with one of each found,</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="285">
           
           
-          <code class="ruby">  # the method should print the appropriate line</code>
+          <code class="ruby">  # If the game ends after one day, with one of each found,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="286">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="286">
           
-          <code class="ruby">  def test_print_end_oneday_one_each</code>
+          
+          <code class="ruby">  # the method should print the appropriate line</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="287">
           <span class="hits">1</span>
           
-          <code class="ruby">    game = Game.new</code>
+          <code class="ruby">  def test_print_end_oneday_one_each</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="288">
           <span class="hits">1</span>
           
-          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
+          <code class="ruby">    game = Game.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="289">
           <span class="hits">1</span>
           
-          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
+          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="290">
           <span class="hits">1</span>
           
-          <code class="ruby">    rubies_found = 1</code>
+          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="291">
           <span class="hits">1</span>
           
-          <code class="ruby">    fake_rubies_found = 1</code>
+          <code class="ruby">    rubies_found = 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="292">
           <span class="hits">1</span>
           
-          <code class="ruby">    prospect_num = 1</code>
+          <code class="ruby">    fake_rubies_found = 1</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="293">
           <span class="hits">1</span>
           
+          <code class="ruby">    prospect_num = 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="294">
+          <span class="hits">1</span>
+          
           <code class="ruby">    days_taken = 1</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="294">
+        <li class="covered" data-hits="2" data-linenumber="295">
           <span class="hits">2</span>
           
           <code class="ruby">    assert_output (&quot;After 1 day, Rubyist #{prospect_num} found:\n\t1 ruby.\n\t1 fake ruby.\nGoing home sad.\n&quot;) { game.print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found) }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="295">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="296">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="297">
           
           
-          <code class="ruby">  # If the game ends after many days, with many of each found,</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="298">
           
           
+          <code class="ruby">  # If the game ends after many days, with many of each found,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="299">
+          
+          
           <code class="ruby">  # the method should print the appropriate line</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="299">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="300">
           
-          <code class="ruby">  def test_print_end_manydays_many_each</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="300">
-          <span class="hits">1</span>
           
-          <code class="ruby">    game = Game.new</code>
+          <code class="ruby">  # BOUNDARY CASE</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="301">
           <span class="hits">1</span>
           
-          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
+          <code class="ruby">  def test_print_end_manydays_many_each</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="302">
           <span class="hits">1</span>
           
-          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
+          <code class="ruby">    game = Game.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="303">
           <span class="hits">1</span>
           
-          <code class="ruby">    rubies_found = 10</code>
+          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="304">
           <span class="hits">1</span>
           
-          <code class="ruby">    fake_rubies_found = 999</code>
+          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="305">
           <span class="hits">1</span>
           
-          <code class="ruby">    prospect_num = 12</code>
+          <code class="ruby">    rubies_found = 10</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="306">
           <span class="hits">1</span>
           
+          <code class="ruby">    fake_rubies_found = 999</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="307">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    prospect_num = 12</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="308">
+          <span class="hits">1</span>
+          
           <code class="ruby">    days_taken = 50</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="307">
+        <li class="covered" data-hits="2" data-linenumber="309">
           <span class="hits">2</span>
           
           <code class="ruby">    assert_output (&quot;After #{days_taken} days, Rubyist #{prospect_num} found:\n\t#{rubies_found} rubies.\n\t#{fake_rubies_found} fake rubies.\nGoing home victorious!\n&quot;) { game.print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found) }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="308">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="309">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="310">
           
           
-          <code class="ruby">  # If the game ends after many days, with &lt; 10 rubies found,</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="311">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="312">
+          
+          
+          <code class="ruby">  # If the game ends after many days, with &lt; 10 rubies found,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="313">
+          
+          
           <code class="ruby">  # the method should print the appropriate line</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="312">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="314">
           
-          <code class="ruby">  def test_print_end_going_home_sad</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="313">
-          <span class="hits">1</span>
           
-          <code class="ruby">    game = Game.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="314">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
+          <code class="ruby">  # BOUNDARY CASE</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="315">
           <span class="hits">1</span>
           
-          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
+          <code class="ruby">  def test_print_end_going_home_sad</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="316">
           <span class="hits">1</span>
           
-          <code class="ruby">    rubies_found = 9</code>
+          <code class="ruby">    game = Game.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="317">
           <span class="hits">1</span>
           
-          <code class="ruby">    fake_rubies_found = 1</code>
+          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="318">
           <span class="hits">1</span>
           
-          <code class="ruby">    prospect_num = 2</code>
+          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="319">
           <span class="hits">1</span>
           
+          <code class="ruby">    rubies_found = 9</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="320">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fake_rubies_found = 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="321">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    prospect_num = 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="322">
+          <span class="hits">1</span>
+          
           <code class="ruby">    days_taken = 13</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="320">
+        <li class="covered" data-hits="2" data-linenumber="323">
           <span class="hits">2</span>
           
           <code class="ruby">    assert_output (&quot;After #{days_taken} days, Rubyist #{prospect_num} found:\n\t#{rubies_found} rubies.\n\t1 fake ruby.\nGoing home sad.\n&quot;) { game.print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found) }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="321">
+        <li class="never" data-hits="" data-linenumber="324">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="322">
+        <li class="never" data-hits="" data-linenumber="325">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="323">
+        <li class="never" data-hits="" data-linenumber="326">
           
           
           <code class="ruby">  # If the game ends after many days, with 0 rubies found,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="324">
+        <li class="never" data-hits="" data-linenumber="327">
           
           
           <code class="ruby">  # the method should print the appropriate line</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="325">
+        <li class="covered" data-hits="1" data-linenumber="328">
           <span class="hits">1</span>
           
           <code class="ruby">  def test_print_end_going_home_empty</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="326">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    game = Game.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="327">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="328">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
-        </li>
-      
         <li class="covered" data-hits="1" data-linenumber="329">
           <span class="hits">1</span>
           
-          <code class="ruby">    rubies_found = 0</code>
+          <code class="ruby">    game = Game.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="330">
           <span class="hits">1</span>
           
-          <code class="ruby">    fake_rubies_found = 215</code>
+          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="331">
           <span class="hits">1</span>
           
-          <code class="ruby">    prospect_num = 2</code>
+          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="332">
           <span class="hits">1</span>
           
-          <code class="ruby">    days_taken = 1</code>
+          <code class="ruby">    rubies_found = 0</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="333">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    assert_output (&quot;After 1 day, Rubyist #{prospect_num} found:\n\t#{rubies_found} rubies.\n\t#{fake_rubies_found} fake rubies.\nGoing home empty-handed.\n&quot;) { game.print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found) }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="334">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="335">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="336">
-          
-          
-          <code class="ruby">  # Passing in a negative value for either ruby count to the method</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="337">
-          
-          
-          <code class="ruby">  # should raise a RuntimeError (caught) as ruby counts can not be negative</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="338">
+        <li class="covered" data-hits="1" data-linenumber="333">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_print_end_negatives_exception</code>
+          <code class="ruby">    fake_rubies_found = 215</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="339">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    game = Game.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="340">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="341">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="342">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    rubies_found = -2</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="343">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    fake_rubies_found = -2</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="344">
+        <li class="covered" data-hits="1" data-linenumber="334">
           <span class="hits">1</span>
           
           <code class="ruby">    prospect_num = 2</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="345">
+        <li class="covered" data-hits="1" data-linenumber="335">
           <span class="hits">1</span>
           
           <code class="ruby">    days_taken = 1</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="346">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="336">
+          <span class="hits">2</span>
           
-          <code class="ruby">    assert_raises RuntimeError do</code>
+          <code class="ruby">    assert_output (&quot;After 1 day, Rubyist #{prospect_num} found:\n\t#{rubies_found} rubies.\n\t#{fake_rubies_found} fake rubies.\nGoing home empty-handed.\n&quot;) { game.print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found) }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="347">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      game.print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="348">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="349">
+        <li class="never" data-hits="" data-linenumber="337">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="350">
-          
-          
-          <code class="ruby">  # ------------------------------------------</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="351">
+        <li class="never" data-hits="" data-linenumber="338">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="352">
+        <li class="never" data-hits="" data-linenumber="339">
           
           
-          <code class="ruby">  # UNIT TESTS FOR METHOD run(seed, prospects, turns)</code>
+          <code class="ruby">  # Passing in a negative value for either ruby count to the method</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="353">
+        <li class="never" data-hits="" data-linenumber="340">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # should raise a RuntimeError (caught) as ruby counts can not be negative</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="354">
+        <li class="never" data-hits="" data-linenumber="341">
           
           
-          <code class="ruby">  # NOTE: To get 100% code coverage of run, only this one test is required.</code>
+          <code class="ruby">  # EDGE CASE</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="355">
-          
-          
-          <code class="ruby">  # This is due to the fact that all of the methods in the Game class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="356">
-          
-          
-          <code class="ruby">  # are called by the run(seed, prospects, turns) method, and those</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="357">
-          
-          
-          <code class="ruby">  # methods have been tested extensively already above. Therefore, partioning</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="358">
-          
-          
-          <code class="ruby">  # and extensive testing of the run method is not necessary.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="359">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="360">
-          
-          
-          <code class="ruby">  # Check that calling the run method prints to the console correctly</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="361">
-          
-          
-          <code class="ruby">  # using a predetermined and tested random number generator seed</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="362">
+        <li class="covered" data-hits="1" data-linenumber="342">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_run_outputs_same_with_seed</code>
+          <code class="ruby">  def test_print_end_negatives_exception</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="363">
+        <li class="covered" data-hits="1" data-linenumber="343">
           <span class="hits">1</span>
           
           <code class="ruby">    game = Game.new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="364">
+        <li class="covered" data-hits="1" data-linenumber="344">
           <span class="hits">1</span>
           
-          <code class="ruby">    correct = &quot;Rubyist #1 starting in Enumerable Canyon.\n\tFound 1 fake ruby in Enumerable Canyon.\n\tFound 1 ruby in Enumerable Canyon.\n\tFound 1 ruby and 1 fake ruby in Enumerable Canyon.\n\tFound 1 ruby and 1 fake ruby in Enumerable Canyon.\n\tFound 1 ruby and 1 fake ruby in Enumerable Canyon.\n\tFound 1 ruby in Enumerable Canyon.\n\tFound 1 fake ruby in Enumerable Canyon.\n\tFound no rubies or fake rubies in Enumerable Canyon.\nAfter 8 days, Rubyist 1 found:\n\t5 rubies.\n\t5 fake rubies.\nGoing home sad.\n&quot;</code>
+          <code class="ruby">    town = Minitest::Mock.new(&quot;town&quot;) # Mock of the town class that just holds a name</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="365">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="345">
+          <span class="hits">1</span>
           
-          <code class="ruby">    assert_output (correct) { game.run(0, 1, 1) }</code>
+          <code class="ruby">    def town.name; &#39;Test Town&#39;; end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="366">
+        <li class="covered" data-hits="1" data-linenumber="346">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    rubies_found = -2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="347">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fake_rubies_found = -2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="348">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    prospect_num = 2</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="349">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    days_taken = 1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="350">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_raises RuntimeError do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="351">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      game.print_rubies_end(days_taken, prospect_num, rubies_found, fake_rubies_found)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="352">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="353">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="367">
+        <li class="never" data-hits="" data-linenumber="354">
+          
+          
+          <code class="ruby">  # ------------------------------------------</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="355">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="356">
+          
+          
+          <code class="ruby">  # UNIT TESTS FOR METHOD run(seed, prospects, turns)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="357">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="358">
+          
+          
+          <code class="ruby">  # NOTE: To get 100% code coverage of run, only this one test is required.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="359">
+          
+          
+          <code class="ruby">  # This is due to the fact that all of the methods in the Game class</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="360">
+          
+          
+          <code class="ruby">  # are called by the run(seed, prospects, turns) method, and those</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="361">
+          
+          
+          <code class="ruby">  # methods have been tested extensively already above. Therefore, partioning</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="362">
+          
+          
+          <code class="ruby">  # and extensive testing of the run method is not necessary.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="363">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="364">
+          
+          
+          <code class="ruby">  # Check that calling the run method prints to the console correctly</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="365">
+          
+          
+          <code class="ruby">  # using a predetermined and tested random number generator seed</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="366">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_run_outputs_same_with_seed</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="367">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    game = Game.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="368">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    correct = &quot;Rubyist #1 starting in Enumerable Canyon.\n\tFound 1 fake ruby in Enumerable Canyon.\n\tFound 1 ruby in Enumerable Canyon.\n\tFound 1 ruby and 1 fake ruby in Enumerable Canyon.\n\tFound 1 ruby and 1 fake ruby in Enumerable Canyon.\n\tFound 1 ruby and 1 fake ruby in Enumerable Canyon.\n\tFound 1 ruby in Enumerable Canyon.\n\tFound 1 fake ruby in Enumerable Canyon.\n\tFound no rubies or fake rubies in Enumerable Canyon.\nAfter 8 days, Rubyist 1 found:\n\t5 rubies.\n\t5 fake rubies.\nGoing home sad.\n&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="369">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    assert_output (correct) { game.run(0, 1, 1) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="370">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="371">
           
           
           <code class="ruby">end</code>
@@ -4014,28 +4080,28 @@
           <code class="ruby">  def initialize(name = &#39;DEFAULT_NAME&#39;, rubies = 0, fake_rubies = 0)</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="13">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="27" data-linenumber="13">
+          <span class="hits">27</span>
           
           <code class="ruby">    @name = name</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="14">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="27" data-linenumber="14">
+          <span class="hits">27</span>
           
           <code class="ruby">    @adjacent_towns = []</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="15">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="27" data-linenumber="15">
+          <span class="hits">27</span>
           
-          <code class="ruby">    @rubies = rubies</code>
+          <code class="ruby">    @rubies = rubies.to_i</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="16">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="27" data-linenumber="16">
+          <span class="hits">27</span>
           
-          <code class="ruby">    @fake_rubies = fake_rubies</code>
+          <code class="ruby">    @fake_rubies = fake_rubies.to_i</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
@@ -4084,8 +4150,8 @@
     <h3>town_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>24</b> relevant lines. 
-      <span class="green"><b>24</b> lines covered</span> and
+      <b>28</b> relevant lines. 
+      <span class="green"><b>28</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4288,7 +4354,7 @@
         <li class="never" data-hits="" data-linenumber="33">
           
           
-          <code class="ruby">  # When initalizing the Town object, the passed in parameters</code>
+          <code class="ruby">  # When initializing the Town object, the passed in parameters</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
@@ -4342,64 +4408,118 @@
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">  # UNIT TEST FOR METHOD add_edge(town)</code>
+          <code class="ruby">  # When initializing the Town object, the passed in rubies and</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # fake_rubies even if non-integer objects will be converted to integers</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">  # When adding a new edge to a Town, the new city should</code>
+          <code class="ruby">  # EDGE CASE</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  # appear as the last object in the Town&#39;s adjacent_towns array</code>
+          <code class="ruby">  def test_town_initialize_non_ints</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_town_add_edge</code>
+          <code class="ruby">    town = Town.new(&#39;Town Name&#39;, &quot;rubies&quot;, nil)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
-          <code class="ruby">    town = Town.new</code>
+          <code class="ruby">    assert town.rubies.is_a?(Integer)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
-          <code class="ruby">    town2 = Town.new</code>
+          <code class="ruby">    assert town.fake_rubies.is_a?(Integer)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    town.add_edge(town2)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="50">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal town2, town.adjacent_towns[0]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">  # UNIT TEST FOR METHOD add_edge(town)</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">  # When adding a new edge to a Town, the new city should</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  # appear as the last object in the Town&#39;s adjacent_towns array</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_town_add_edge</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    town = Town.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    town2 = Town.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    town.add_edge(town2)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal town2, town.adjacent_towns[0]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">end</code>

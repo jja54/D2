@@ -12,8 +12,8 @@ class Town
   def initialize(name = 'DEFAULT_NAME', rubies = 0, fake_rubies = 0)
     @name = name
     @adjacent_towns = []
-    @rubies = rubies
-    @fake_rubies = fake_rubies
+    @rubies = rubies.to_i
+    @fake_rubies = fake_rubies.to_i
   end
 
   def add_edge(adjacent_town)

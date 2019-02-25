@@ -40,6 +40,13 @@ class ArgCheckTest < MiniTest::Test
     error_msg = setup
 	assert_output(error_msg) { check_args(args) }
   end
+  
+  # If over 3 args are passed, the error message is displayed
+  def test_too_many_args
+    args = [0, 4, 3, 12]
+    error_msg = setup
+    assert_output(error_msg) { check_args(args) }
+  end
 
   # If non-integer args are passed, arg_check will convert them to integers
   # and will return false (no error in args)

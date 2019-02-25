@@ -247,6 +247,7 @@ class GameTest < MiniTest::Test
 
   # Passing in a negative value for either ruby count to the method
   # should raise a RuntimeError (caught) as ruby counts can not be negative
+  # EDGE CASE
   def test_print_negatives_exception
     game = Game.new
     town = Minitest::Mock.new("town") # Mock of the town class that just holds a name
@@ -296,6 +297,7 @@ class GameTest < MiniTest::Test
 
   # If the game ends after many days, with many of each found,
   # the method should print the appropriate line
+  # BOUNDARY CASE
   def test_print_end_manydays_many_each
     game = Game.new
     town = Minitest::Mock.new("town") # Mock of the town class that just holds a name
@@ -309,6 +311,7 @@ class GameTest < MiniTest::Test
 
   # If the game ends after many days, with < 10 rubies found,
   # the method should print the appropriate line
+  # BOUNDARY CASE
   def test_print_end_going_home_sad
     game = Game.new
     town = Minitest::Mock.new("town") # Mock of the town class that just holds a name
@@ -335,6 +338,7 @@ class GameTest < MiniTest::Test
 
   # Passing in a negative value for either ruby count to the method
   # should raise a RuntimeError (caught) as ruby counts can not be negative
+  # EDGE CASE
   def test_print_end_negatives_exception
     game = Game.new
     town = Minitest::Mock.new("town") # Mock of the town class that just holds a name
