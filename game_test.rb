@@ -360,6 +360,8 @@ class GameTest < MiniTest::Test
   # are called by the run(seed, prospects, turns) method, and those
   # methods have been tested extensively already above. Therefore, partioning
   # and extensive testing of the run method is not necessary.
+  # The arguements themselves are protected and tested by the arg_check_test file so that
+  # in proper program use it is not possible to pass in invalid arguments.
 
   # Check that calling the run method prints to the console correctly
   # using a predetermined and tested random number generator seed

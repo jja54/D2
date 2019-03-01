@@ -48,6 +48,14 @@ class ArgCheckTest < MiniTest::Test
     assert_output(error_msg) { check_args(args) }
   end
 
+  # If nil's are passed as args, arg_check will pass and the nil values
+  # will be converted to integers (0)
+  def test_nil_args
+    args = [nil, nil, nil]
+    error_msg = setup
+	refute check_args(args)
+  end
+
   # If non-integer args are passed, arg_check will convert them to integers
   # and will return false (no error in args)
   # EDGE CASE
